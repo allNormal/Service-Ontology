@@ -1,0 +1,356 @@
+<https://w3id.org/audit/ns/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/audit/ns/service#hasCorrespondingFetch
+<https://w3id.org/audit/ns/service#hasCorrespondingFetch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#hasCorrespondingFetch> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Receive> .
+<https://w3id.org/audit/ns/service#hasCorrespondingFetch> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/audit/ns/service#Fetch> .
+<https://w3id.org/audit/ns/service#hasCorrespondingFetch> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between Receive and Fetch, a Receive can have 0..N Fetch" .
+<https://w3id.org/audit/ns/service#hasCorrespondingFetch> <http://www.w3.org/2000/01/rdf-schema#label> "hasCorrespondingFetch" .
+# 
+# https://w3id.org/audit/ns/service#hasCorrespondingPlan
+<https://w3id.org/audit/ns/service#hasCorrespondingPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#hasCorrespondingPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#AuditBoxService> .
+<https://w3id.org/audit/ns/service#hasCorrespondingPlan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ep-plan#Plan> .
+<https://w3id.org/audit/ns/service#hasCorrespondingPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between Service and Plan, a Service can have 1..1 Plan" .
+<https://w3id.org/audit/ns/service#hasCorrespondingPlan> <http://www.w3.org/2000/01/rdf-schema#label> "hasCorrespondingPlan" .
+# 
+# https://w3id.org/audit/ns/service#hasParameter
+<https://w3id.org/audit/ns/service#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#ParameterizedQuery> .
+<https://w3id.org/audit/ns/service#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/audit/ns/service#Parameter> .
+<https://w3id.org/audit/ns/service#hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between ParameterizedQuery and Parameter, to describe the filter inside a query. ParameterizedQuery can have 1..N Parameter" .
+<https://w3id.org/audit/ns/service#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasParameter" .
+# 
+# https://w3id.org/audit/ns/service#hasPlan
+<https://w3id.org/audit/ns/service#hasPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#hasPlan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#System> .
+<https://w3id.org/audit/ns/service#hasPlan> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ep-plan#Plan> .
+<https://w3id.org/audit/ns/service#hasPlan> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between System and Plan, a System can have 1..N Plan" .
+<https://w3id.org/audit/ns/service#hasPlan> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlan" .
+# 
+# https://w3id.org/audit/ns/service#hasService
+<https://w3id.org/audit/ns/service#hasService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#hasService> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#System> .
+<https://w3id.org/audit/ns/service#hasService> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/audit/ns/service#AuditBoxService> .
+<https://w3id.org/audit/ns/service#hasService> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between System and Service, a System can have 1..N Service" .
+<https://w3id.org/audit/ns/service#hasService> <http://www.w3.org/2000/01/rdf-schema#label> "hasService" .
+# 
+# https://w3id.org/audit/ns/service#hasTransformationFunction
+<https://w3id.org/audit/ns/service#hasTransformationFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#hasTransformationFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Acquire> .
+<https://w3id.org/audit/ns/service#hasTransformationFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/audit/ns/service#Transformation> .
+<https://w3id.org/audit/ns/service#hasTransformationFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between Acquire and TransformationFunction, an Acquire can have 1..1 TransformationFunction" .
+<https://w3id.org/audit/ns/service#hasTransformationFunction> <http://www.w3.org/2000/01/rdf-schema#label> "hasTransformationFunction" .
+# 
+# https://w3id.org/audit/ns/service#hasValidationFunction
+<https://w3id.org/audit/ns/service#hasValidationFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#hasValidationFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Acquire> .
+<https://w3id.org/audit/ns/service#hasValidationFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/audit/ns/service#Validation> .
+<https://w3id.org/audit/ns/service#hasValidationFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between Acquire and Validation, an Acquire can have 0..1 Validation" .
+<https://w3id.org/audit/ns/service#hasValidationFunction> <http://www.w3.org/2000/01/rdf-schema#label> "hasValidationFunction" .
+# 
+# https://w3id.org/audit/ns/service#isBasedOnStep
+<https://w3id.org/audit/ns/service#isBasedOnStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/audit/ns/service#isBasedOnStep> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Acquire> .
+<https://w3id.org/audit/ns/service#isBasedOnStep> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/p-plan#Step> .
+<https://w3id.org/audit/ns/service#isBasedOnStep> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between Acquire and Step, an Acquire correspond to 1..1 Step" .
+<https://w3id.org/audit/ns/service#isBasedOnStep> <http://www.w3.org/2000/01/rdf-schema#label> "isBasedOnStep" .
+# 
+# https://w3id.org/ep-plan#hasTraceElement
+<https://w3id.org/ep-plan#hasTraceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/ep-plan#hasTraceElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#System> .
+<https://w3id.org/ep-plan#hasTraceElement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ep-plan#ExecutionTraceBundle> .
+<https://w3id.org/ep-plan#hasTraceElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between System and ExecutionTraceBundle, a System can have 0..N ExecutionTraceBundle" .
+<https://w3id.org/ep-plan#hasTraceElement> <http://www.w3.org/2000/01/rdf-schema#label> "hasTraceElement" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/audit/ns/service#description
+<https://w3id.org/audit/ns/service#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#ServiceFunction> .
+<https://w3id.org/audit/ns/service#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#description> <http://www.w3.org/2000/01/rdf-schema#comment> "description of a service function" .
+<https://w3id.org/audit/ns/service#description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+# 
+# https://w3id.org/audit/ns/service#hasBackupTimer
+<https://w3id.org/audit/ns/service#hasBackupTimer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasBackupTimer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#System> .
+<https://w3id.org/audit/ns/service#hasBackupTimer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/audit/ns/service#hasBackupTimer> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set a timer for system backup" .
+<https://w3id.org/audit/ns/service#hasBackupTimer> <http://www.w3.org/2000/01/rdf-schema#label> "hasBackupTimer" .
+# 
+# https://w3id.org/audit/ns/service#hasBackupType
+<https://w3id.org/audit/ns/service#hasBackupType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasBackupType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#System> .
+<https://w3id.org/audit/ns/service#hasBackupType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasBackupType> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype property to set the type of the system backup" .
+<https://w3id.org/audit/ns/service#hasBackupType> <http://www.w3.org/2000/01/rdf-schema#label> "hasBackupType" .
+# 
+# https://w3id.org/audit/ns/service#hasConstraintLocalPath
+<https://w3id.org/audit/ns/service#hasConstraintLocalPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasConstraintLocalPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Validation> .
+<https://w3id.org/audit/ns/service#hasConstraintLocalPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasConstraintLocalPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to link validation with the saved local constraint" .
+<https://w3id.org/audit/ns/service#hasConstraintLocalPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasContraintLocalPath" .
+# 
+# https://w3id.org/audit/ns/service#hasConstraintString
+<https://w3id.org/audit/ns/service#hasConstraintString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasConstraintString> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Validation> .
+<https://w3id.org/audit/ns/service#hasConstraintString> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasConstraintString> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set constraint string of a validation" .
+<https://w3id.org/audit/ns/service#hasConstraintString> <http://www.w3.org/2000/01/rdf-schema#label> "hasConstraintString" .
+# 
+# https://w3id.org/audit/ns/service#hasConstraintType
+<https://w3id.org/audit/ns/service#hasConstraintType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasConstraintType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Validation> .
+<https://w3id.org/audit/ns/service#hasConstraintType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasConstraintType> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set the type of validation" .
+<https://w3id.org/audit/ns/service#hasConstraintType> <http://www.w3.org/2000/01/rdf-schema#label> "hasConstraintType" .
+# 
+# https://w3id.org/audit/ns/service#hasConstraintUriPath
+<https://w3id.org/audit/ns/service#hasConstraintUriPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasConstraintUriPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Validation> .
+<https://w3id.org/audit/ns/service#hasConstraintUriPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasConstraintUriPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to retrieve constraint from external sources" .
+<https://w3id.org/audit/ns/service#hasConstraintUriPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasConstraintUriPath" .
+# 
+# https://w3id.org/audit/ns/service#hasJsonSchemaLocalPath
+<https://w3id.org/audit/ns/service#hasJsonSchemaLocalPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasJsonSchemaLocalPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Transformation> .
+<https://w3id.org/audit/ns/service#hasJsonSchemaLocalPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasJsonSchemaLocalPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to retrieve json schema from local file" .
+<https://w3id.org/audit/ns/service#hasJsonSchemaLocalPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasJsonSchemaLocalPath" .
+# 
+# https://w3id.org/audit/ns/service#hasMappingLocalPath
+<https://w3id.org/audit/ns/service#hasMappingLocalPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasMappingLocalPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Transformation> .
+<https://w3id.org/audit/ns/service#hasMappingLocalPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasMappingLocalPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to retrieve mapping that already saved in a local file" .
+<https://w3id.org/audit/ns/service#hasMappingLocalPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasMappingLocalPath" .
+# 
+# https://w3id.org/audit/ns/service#hasMappingString
+<https://w3id.org/audit/ns/service#hasMappingString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasMappingString> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Transformation> .
+<https://w3id.org/audit/ns/service#hasMappingString> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasMappingString> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to save the actual mapping value" .
+<https://w3id.org/audit/ns/service#hasMappingString> <http://www.w3.org/2000/01/rdf-schema#label> "hasMappingString" .
+# 
+# https://w3id.org/audit/ns/service#hasMappingType
+<https://w3id.org/audit/ns/service#hasMappingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasMappingType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Transformation> .
+<https://w3id.org/audit/ns/service#hasMappingType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasMappingType> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set mapping type" .
+<https://w3id.org/audit/ns/service#hasMappingType> <http://www.w3.org/2000/01/rdf-schema#label> "hasMappingType" .
+# 
+# https://w3id.org/audit/ns/service#hasMappingUriPath
+<https://w3id.org/audit/ns/service#hasMappingUriPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasMappingUriPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Transformation> .
+<https://w3id.org/audit/ns/service#hasMappingUriPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasMappingUriPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to retrieve mapping from external sources" .
+<https://w3id.org/audit/ns/service#hasMappingUriPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasMappingUriPath" .
+# 
+# https://w3id.org/audit/ns/service#hasQueryBinding
+<https://w3id.org/audit/ns/service#hasQueryBinding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasQueryBinding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Query> .
+<https://w3id.org/audit/ns/service#hasQueryBinding> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasQueryBinding> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set query binding" .
+<https://w3id.org/audit/ns/service#hasQueryBinding> <http://www.w3.org/2000/01/rdf-schema#label> "hasQueryBinding" .
+# 
+# https://w3id.org/audit/ns/service#hasQueryLocalPath
+<https://w3id.org/audit/ns/service#hasQueryLocalPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasQueryLocalPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Query> .
+<https://w3id.org/audit/ns/service#hasQueryLocalPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasQueryLocalPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to link query into its local file form" .
+<https://w3id.org/audit/ns/service#hasQueryLocalPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasQueryLocalPath" .
+# 
+# https://w3id.org/audit/ns/service#hasQueryString
+<https://w3id.org/audit/ns/service#hasQueryString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasQueryString> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Query> .
+<https://w3id.org/audit/ns/service#hasQueryString> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasQueryString> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties for query value" .
+<https://w3id.org/audit/ns/service#hasQueryString> <http://www.w3.org/2000/01/rdf-schema#label> "hasQueryString" .
+# 
+# https://w3id.org/audit/ns/service#hasReceiveApiPath
+<https://w3id.org/audit/ns/service#hasReceiveApiPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasReceiveApiPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Receive> .
+<https://w3id.org/audit/ns/service#hasReceiveApiPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasReceiveApiPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set api path where the post receive can be found" .
+<https://w3id.org/audit/ns/service#hasReceiveApiPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasReceiveApiPath" .
+# 
+# https://w3id.org/audit/ns/service#hasSourceType
+<https://w3id.org/audit/ns/service#hasSourceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasSourceType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/audit/ns/service#hasSourceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Acquire> .
+<https://w3id.org/audit/ns/service#hasSourceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasSourceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set what type of data can be expected for the post api" .
+<https://w3id.org/audit/ns/service#hasSourceType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSourceType" .
+# 
+# https://w3id.org/audit/ns/service#hasTimePeriod
+<https://w3id.org/audit/ns/service#hasTimePeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasTimePeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#TimerFetch> .
+<https://w3id.org/audit/ns/service#hasTimePeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/audit/ns/service#hasTimePeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set a timer to fetch data from external sources" .
+<https://w3id.org/audit/ns/service#hasTimePeriod> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimePeriod" .
+# 
+# https://w3id.org/audit/ns/service#hasType
+<https://w3id.org/audit/ns/service#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Fetch> .
+<https://w3id.org/audit/ns/service#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set fetch type" .
+<https://w3id.org/audit/ns/service#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType" .
+# 
+# https://w3id.org/audit/ns/service#hasURI
+<https://w3id.org/audit/ns/service#hasURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#hasURI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Fetch> .
+<https://w3id.org/audit/ns/service#hasURI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#hasURI> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set the location of the data to be fetched on" .
+<https://w3id.org/audit/ns/service#hasURI> <http://www.w3.org/2000/01/rdf-schema#label> "hasURI" .
+# 
+# https://w3id.org/audit/ns/service#name
+<https://w3id.org/audit/ns/service#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#ServiceFunction> .
+<https://w3id.org/audit/ns/service#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to name the service function" .
+<https://w3id.org/audit/ns/service#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://w3id.org/audit/ns/service#position
+<https://w3id.org/audit/ns/service#position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#position> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Parameter> .
+<https://w3id.org/audit/ns/service#position> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/audit/ns/service#position> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set the position for the filter query" .
+<https://w3id.org/audit/ns/service#position> <http://www.w3.org/2000/01/rdf-schema#label> "position" .
+# 
+# https://w3id.org/audit/ns/service#type
+<https://w3id.org/audit/ns/service#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/audit/ns/service#type> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Parameter> .
+<https://w3id.org/audit/ns/service#type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/audit/ns/service#type> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set query filter type" .
+<https://w3id.org/audit/ns/service#type> <http://www.w3.org/2000/01/rdf-schema#label> "type" .
+# 
+# https://w3id.org/semsys/plan/ns/audit/service#hasQueryApiPath
+<https://w3id.org/semsys/plan/ns/audit/service#hasQueryApiPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/semsys/plan/ns/audit/service#hasQueryApiPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Query> .
+<https://w3id.org/semsys/plan/ns/audit/service#hasQueryApiPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/semsys/plan/ns/audit/service#hasQueryApiPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype properties to set where the query can be found" .
+<https://w3id.org/semsys/plan/ns/audit/service#hasQueryApiPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasQueryApiPath" .
+# 
+# urn:absolute:h/hasQueryUriPath
+<urn:absolute:h/hasQueryUriPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:absolute:h/hasQueryUriPath> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/audit/ns/service#Query> .
+<urn:absolute:h/hasQueryUriPath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<urn:absolute:h/hasQueryUriPath> <http://www.w3.org/2000/01/rdf-schema#comment> "Datatype value to get query value from external sources" .
+<urn:absolute:h/hasQueryUriPath> <http://www.w3.org/2000/01/rdf-schema#label> "hasQueryUriPath" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/p-plan#Step
+<http://purl.org/net/p-plan#Step> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Bundle
+<http://www.w3.org/ns/prov#Bundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Bundle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Plan
+<http://www.w3.org/ns/prov#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+# 
+# https://w3id.org/audit/ns/service#Acquire
+<https://w3id.org/audit/ns/service#Acquire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#Acquire> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#AuditBoxService> .
+<https://w3id.org/audit/ns/service#Acquire> <http://www.w3.org/2000/01/rdf-schema#comment> "Service with the purpose to retrieve data from another program or application" .
+<https://w3id.org/audit/ns/service#Acquire> <http://www.w3.org/2000/01/rdf-schema#label> "Acquire" .
+# 
+# https://w3id.org/audit/ns/service#AuditBoxService
+<https://w3id.org/audit/ns/service#AuditBoxService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#AuditBoxService> <http://www.w3.org/2000/01/rdf-schema#comment> "Service inside a program or application" .
+<https://w3id.org/audit/ns/service#AuditBoxService> <http://www.w3.org/2000/01/rdf-schema#label> "AuditboxService" .
+# 
+# https://w3id.org/audit/ns/service#Fetch
+<https://w3id.org/audit/ns/service#Fetch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#Fetch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#Acquire> .
+<https://w3id.org/audit/ns/service#Fetch> <http://www.w3.org/2000/01/rdf-schema#comment> "Service to get data from another program or application" .
+<https://w3id.org/audit/ns/service#Fetch> <http://www.w3.org/2000/01/rdf-schema#label> "Fetch" .
+# 
+# https://w3id.org/audit/ns/service#Parameter
+<https://w3id.org/audit/ns/service#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameter to define filter in a query" .
+<https://w3id.org/audit/ns/service#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter" .
+# 
+# https://w3id.org/audit/ns/service#ParameterizedQuery
+<https://w3id.org/audit/ns/service#ParameterizedQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#ParameterizedQuery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#Query> .
+<https://w3id.org/audit/ns/service#ParameterizedQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "Service to query data from database with input" .
+<https://w3id.org/audit/ns/service#ParameterizedQuery> <http://www.w3.org/2000/01/rdf-schema#label> "ParameterizedQuery" .
+# 
+# https://w3id.org/audit/ns/service#Query
+<https://w3id.org/audit/ns/service#Query> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#Query> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#AuditBoxService> .
+<https://w3id.org/audit/ns/service#Query> <http://www.w3.org/2000/01/rdf-schema#comment> "Service to query data from a database" .
+<https://w3id.org/audit/ns/service#Query> <http://www.w3.org/2000/01/rdf-schema#label> "Query" .
+# 
+# https://w3id.org/audit/ns/service#Receive
+<https://w3id.org/audit/ns/service#Receive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#Receive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#Acquire> .
+<https://w3id.org/audit/ns/service#Receive> <http://www.w3.org/2000/01/rdf-schema#comment> "Service to receive data from another program or application" .
+<https://w3id.org/audit/ns/service#Receive> <http://www.w3.org/2000/01/rdf-schema#label> "Receive" .
+# 
+# https://w3id.org/audit/ns/service#ServiceFunction
+<https://w3id.org/audit/ns/service#ServiceFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#ServiceFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Function inside a program or application" .
+<https://w3id.org/audit/ns/service#ServiceFunction> <http://www.w3.org/2000/01/rdf-schema#label> "ServiceFunction" .
+# 
+# https://w3id.org/audit/ns/service#System
+<https://w3id.org/audit/ns/service#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/audit/ns/service#TimerFetch
+<https://w3id.org/audit/ns/service#TimerFetch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#TimerFetch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#Fetch> .
+<https://w3id.org/audit/ns/service#TimerFetch> <http://www.w3.org/2000/01/rdf-schema#comment> "Service to continously get data from another program or application" .
+<https://w3id.org/audit/ns/service#TimerFetch> <http://www.w3.org/2000/01/rdf-schema#label> "TimerFetch" .
+# 
+# https://w3id.org/audit/ns/service#Transformation
+<https://w3id.org/audit/ns/service#Transformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#Transformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#ServiceFunction> .
+<https://w3id.org/audit/ns/service#Transformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Transform data that comes in into triples" .
+<https://w3id.org/audit/ns/service#Transformation> <http://www.w3.org/2000/01/rdf-schema#label> "Transformation" .
+# 
+# https://w3id.org/audit/ns/service#Validation
+<https://w3id.org/audit/ns/service#Validation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/audit/ns/service#Validation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/audit/ns/service#ServiceFunction> .
+<https://w3id.org/audit/ns/service#Validation> <http://www.w3.org/2000/01/rdf-schema#comment> "Validation for the data that comes in" .
+<https://w3id.org/audit/ns/service#Validation> <http://www.w3.org/2000/01/rdf-schema#label> "Validation" .
+# 
+# https://w3id.org/ep-plan#ExecutionTraceBundle
+<https://w3id.org/ep-plan#ExecutionTraceBundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ep-plan#ExecutionTraceBundle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Bundle> .
+# 
+# https://w3id.org/ep-plan#Plan
+<https://w3id.org/ep-plan#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ep-plan#Plan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Plan> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
